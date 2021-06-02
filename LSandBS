@@ -1,0 +1,57 @@
+What is a linear search?
+A linear search is also known as a sequential search that simply scans each element at a time. 
+If we want to search any element , then the searching begins from the 0th element and scans each element until the required element is  found. We cannot directly jump from the 0th element to the required element, i.e., each element is scanned one by one till the element is not found.
+Complexity of Linear search :---
+Best case : --- O(1)
+Worst case : ---- O(n)
+Average case : ---- O((n+1)/2)
+
+What is a Binary search?
+A binary search is a search in which the middle element is calculated to check whether it is smaller or larger than the element which is to be searched. The main advantage of using binary search is that it does not scan each element in the list. Instead of scanning each element, it performs the searching to the half of the list. So, the binary search takes less time to search an element as compared to a linear search.
+The one pre-requisite of binary search is that an array should be in sorted order, whereas the linear search works on both sorted and unsorted array. The binary search algorithm is based on the divide and conquer technique, which means that it will divide the array recursively.
+There are three cases used in the binary search:
+Case 1: data<a[mid] then left = mid+1.
+Case 2: data>a[mid] then right=mid-1
+Case 3: data = a[mid] // element is found
+In the above case, 'a' is the name of the array, mid is the index of the element calculated recursively, data is the element that is to be searched, left denotes the left element of the array and right denotes the element that occur on the right side of the array.
+Complexity of Binary search :---
+Best case : --- O(1)
+Worst case : ---- O(log n)
+
+Differences between Linear search and Binary search
+
+Definition :-
+LS - The linear search starts searching from the first element and compares each element with a searched element till the element is not found.	
+BS - It finds the position of the searched element by finding the middle element of the array.
+
+LS - Sorted data	In a linear search, the elements don't need to be arranged in sorted order.	
+BS - The pre-condition for the binary search is that the elements must be arranged in a sorted order.
+
+Implementation : - 
+LS - The linear search can be implemented on any linear data structure such as an array, linked list, etc.	
+BS - The implementation of binary search is limited as it can be implemented only on those data structures that have two-way traversal.
+Approach : -	
+LS - It is based on the sequential approach.	
+BS - It is based on the divide and conquer approach.
+
+Size : - 
+LS - It is preferrable for the small-sized data sets.	
+BS - It is preferrable for the large-size data sets.
+
+Efficiency : -
+LS - It is less efficient in the case of large-size data sets.	
+BS - It is more efficient in the case of large-size data sets.
+
+Worst-case scenario : -	
+LS - In a linear search, the worst- case scenario for finding the element is O(n).	
+BS - In a binary search, the worst-case scenario for finding the element is O(log2n).
+Best-case scenario : -	
+LS - In a linear search, the best-case scenario for finding the first element in the list is O(1).	
+BS - In a binary search, the best-case scenario for finding the first element in the list is O(1).
+Dimensional array	: - 
+LS - It can be implemented on both a single and multidimensional array.	
+BS - It can be implemented only on a multidimensional array.
+
+
+
+
