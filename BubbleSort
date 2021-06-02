@@ -1,0 +1,25 @@
+Bubble sort is a simple sorting algorithm. 
+This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order.
+This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items.
+Best Case Time Complexity: O(n). Best case occurs when array is already sorted.
+Working of Bubble Sort : --
+Suppose we are trying to sort the elements in ascending order.
+
+1. First Iteration (Compare and Swap)
+
+-Starting from the first index, compare the first and the second elements.
+-If the first element is greater than the second element, they are swapped.
+-Now, compare the second and the third elements. Swap them if they are not in order.
+-The above process goes on until the last element.
+
+2. Remaining Iteration
+
+-The same process goes on for the remaining iterations.
+-After each iteration, the largest element among the unsorted elements is placed at the end.
+-In each iteration, the comparison takes place up to the last unsorted element.
+-The array is sorted when all the unsorted elements are placed at their correct positions.
+
+Optimized Implementation: 
+The function can be optimized by stopping the algorithm if inner loop didn’t cause any swap. 
+i .e . in  inner loop  , write it as (i = 0 ; i < n - 1 - i ; i++) which will cause the inner loop to stop if there isnt any swap without wasting the computation . 
+ 
