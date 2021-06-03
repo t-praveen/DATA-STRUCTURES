@@ -10,8 +10,8 @@ What is a Binary search?
 A binary search is a search in which the middle element is calculated to check whether it is smaller or larger than the element which is to be searched. The main advantage of using binary search is that it does not scan each element in the list. Instead of scanning each element, it performs the searching to the half of the list. So, the binary search takes less time to search an element as compared to a linear search.
 The one pre-requisite of binary search is that an array should be in sorted order, whereas the linear search works on both sorted and unsorted array. The binary search algorithm is based on the divide and conquer technique, which means that it will divide the array recursively.
 There are three cases used in the binary search:
-Case 1: data<a[mid] then left = mid+1.
-Case 2: data>a[mid] then right=mid-1
+Case 1: data<a[mid] then right=mid-1.
+Case 2: data>a[mid] then  left = mid+1.
 Case 3: data = a[mid] // element is found
 In the above case, 'a' is the name of the array, mid is the index of the element calculated recursively, data is the element that is to be searched, left denotes the left element of the array and right denotes the element that occur on the right side of the array.
 Complexity of Binary search :---
